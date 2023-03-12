@@ -8,7 +8,7 @@ import Player_Two_down
 
 
 
-def Menu_controll(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):                         # Novi prozor kada se klikne dugme srpski ili engleski jezik
+def Menu_controll(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):    # Novi prozor kada se klikne dugme srpski ili engleski jezik
 
     class buttonb(object):
         def __init__(self, d_text, d_command):
@@ -71,13 +71,13 @@ def Menu_controll(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):           
         copyright_text = "copyright by Velicki"
 
     menu_controll.geometry("600x600")                  # Velicina prozora
-    menu_controll.title("change_game_controll")                # Ime prozora
+    menu_controll.title("change_game_controll")        # Ime prozora
     menu_controll.resizable(False, False)
 
-    icon = PhotoImage(file="Icon.png")          # Slika je prebacena u format koji moze da cita python
-    menu_controll.iconphoto(True, icon)                # Ikonica prozora
+    icon = PhotoImage(file="Icon.png")       # Slika je prebacena u format koji moze da cita python
+    menu_controll.iconphoto(True, icon)      # Ikonica prozora
 
-    menu_controll.config(bg="black")           # Boja pozadine prozora
+    menu_controll.config(bg="black")         # Boja pozadine prozora
 
     naslov = Label(menu_controll, 
                     text=main_text, 
@@ -87,10 +87,7 @@ def Menu_controll(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):           
                     activeforeground="red",
                     activebackground="black",  
                     relief=RAISED, 
-                    bd=10 
-                    #pady=10, 
-                    #padx=10, 
-                    )             #Napravljen i dekorisan naslov
+                    bd=10)                   #Napravljen i dekorisan naslov
 
     p_1_u = buttonb(p1up+p1_up, player_1_up)
     player1up = p_1_u.create_button()        #napravljeno dugme za igraca Micu - gore

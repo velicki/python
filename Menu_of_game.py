@@ -6,7 +6,7 @@ import Change_color
 
 
 
-def menu_of_game(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):                         # Novi prozor kada se klikne dugme srpski ili engleski jezik
+def menu_of_game(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):   # Novi prozor kada se klikne dugme srpski ili engleski jezik
 
     class buttonb(object):
         def __init__(self, d_text, d_command):
@@ -55,14 +55,14 @@ def menu_of_game(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):            
         boje = "player color"
         Pokreni_igricu = "START GAME"
 
-    menu_game.geometry("600x600")                  # Velicina prozora
-    menu_game.title(main_text)                # Ime prozora
+    menu_game.geometry("600x600")            # Velicina prozora
+    menu_game.title(main_text)               # Ime prozora
     menu_game.resizable(False, False)
 
-    icon = PhotoImage(file="Icon.png")          # Slika je prebacena u format koji moze da cita python
-    menu_game.iconphoto(True, icon)                # Ikonica prozora
+    icon = PhotoImage(file="Icon.png")       # Slika je prebacena u format koji moze da cita python
+    menu_game.iconphoto(True, icon)          # Ikonica prozora
 
-    menu_game.config(bg="black")           # Boja pozadine prozora
+    menu_game.config(bg="black")             # Boja pozadine prozora
 
     naslov = Label(menu_game, 
                     text=main_text, 
@@ -72,19 +72,16 @@ def menu_of_game(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):            
                     activeforeground="red",
                     activebackground="black",  
                     relief=RAISED, 
-                    bd=10 
-                    #pady=10, 
-                    #padx=10, 
-                    )             #Napravljen i dekorisan naslov
+                    bd=10)                    #Napravljen i dekorisan naslov
 
     con = buttonb(kontrole, change_controll)
-    controll = con.create_button()         #Kreirano dugme za promene kontole
+    controll = con.create_button()            #Kreirano dugme za promene kontole
 
     col = buttonb(boje, change_color)
-    colorr = col.create_button()          #Kreirano dugme za promenu boje igraca
+    colorr = col.create_button()              #Kreirano dugme za promenu boje igraca
 
     s_g = buttonb(Pokreni_igricu, start_new_game)
-    start_game = s_g.create_button()  #Kreirano dugme za pokretanje igrice
+    start_game = s_g.create_button()          #Kreirano dugme za pokretanje igrice
 
     copyright = Label(menu_game, 
                     text=copyright_text, 

@@ -42,42 +42,42 @@ def clicked_english():
     
 
 
-window = Tk ()                                  # inicializiran prozor
+window = Tk ()                                # inicializiran prozor
 
 p2_up = "Up"
 p2_down = "Down"
 p1_up = "w"
 p1_down = "s"
 
-window.geometry("600x600")                  # Velicina prozora
-window.title("Mica VS Bica")                # Ime prozora
+window.geometry("600x600")                     # Velicina prozora
+window.title("Mica VS Bica")                   # Ime prozora
 window.resizable(False, False)
 
 
-icon = PhotoImage(file="Icon.png")          # Slika je prebacena u format koji moze da cita python
-window.iconphoto(True, icon)                # Ikonica prozora
+icon = PhotoImage(file="Icon.png")             # Slika je prebacena u format koji moze da cita python
+window.iconphoto(True, icon)                   # Ikonica prozora
 
-window.config(bg="black")                   # Boja pozadine prozora
+window.config(bg="black")                      # Boja pozadine prozora
 
 Serbian_Flag = PhotoImage(file="SerbianFlag.png")
 English_Flag = PhotoImage(file="EnglishFlag.png")
 
 
 s_f_b = buttonb("SRPSKI", Serbian_Flag, clicked_serbian)
-serbian_flag = s_f_b.create_button()         # Napravljeno i dekorisano je dugme srpski jezikj
+serbian_flag = s_f_b.create_button()            # Napravljeno i dekorisano je dugme srpski jezikj
 
 e_f_b = buttonb("ENGLISH", English_Flag, clicked_english)
-english_flag = e_f_b.create_button()         # Napravljeno i dekorisano je dugme engleski jezik
+english_flag = e_f_b.create_button()            # Napravljeno i dekorisano je dugme engleski jezik
 
 copyright = Label(window, 
                 text="copyright by Velicki", 
                 font=("Arial", 10), 
                 fg="red", 
-                bg="black")                # Informacija na dnu stranice ko je napravio igricu
+                bg="black")                      # Informacija na dnu stranice ko je napravio igricu
 
 
 serbian_flag.pack(pady=50)                       # Dugme za Srpski je ubaceno u prozor
 english_flag.pack(pady=50)                       # Dugme za Engleski je ubaceno u prozor
-copyright.pack(side="bottom")              # Informacija na dnu je ubacena u prozor
+copyright.pack(side="bottom")                    # Informacija na dnu je ubacena u prozor
 
-window.mainloop()                               # kraj inicializiranog prozora
+window.mainloop()                                # kraj inicializiranog prozora

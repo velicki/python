@@ -25,14 +25,14 @@ def game(jezik, p1color, p2color,p1_up,p1_down,p2_up,p2_down):
     try: duration
     except: duration = 0
 
-    Tenis_Game.geometry("600x600")                  # Velicina prozora
+    Tenis_Game.geometry("600x600")             # Velicina prozora
     Tenis_Game.title(main_text)                # Ime prozora
     Tenis_Game.resizable(False, False)
 
-    icon = PhotoImage(file="Icon.png")          # Slika je prebacena u format koji moze da cita python
-    Tenis_Game.iconphoto(True, icon)                # Ikonica prozora
+    icon = PhotoImage(file="Icon.png")        # Slika je prebacena u format koji moze da cita python
+    Tenis_Game.iconphoto(True, icon)          # Ikonica prozora
 
-    Tenis_Game.config(bg="black")           # Boja pozadine prozora
+    Tenis_Game.config(bg="black")             # Boja pozadine prozora
     
     result_text = StringVar()
     result = Label(Tenis_Game, 
@@ -98,8 +98,8 @@ def game(jezik, p1color, p2color,p1_up,p1_down,p2_up,p2_down):
                 canvas.coords(loptacan,290,255)
                 time.sleep(0.5)
         if (coordinates[1]>=(HEIGHT-25) or coordinates[1]<0):
-            yVelocity = -yVelocity     #Loptica se odbija od ivice terena
-        if ((duration/10)==1):     #brojac - na svaka 4 kruga brzina loptice se povecava
+            yVelocity = -yVelocity                             #Loptica se odbija od ivice terena
+        if ((duration/10)==1):                                 #brojac - na svaka 4 kruga brzina loptice se povecava
             if (xVelocity > 0):
                 xVelocity += 1
             else: xVelocity -= 1

@@ -4,7 +4,7 @@ import game_controll
 
 
 
-def Map_Button(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):                         # Novi prozor kada se klikne dugme srpski ili engleski jezik
+def Map_Button(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):          # Novi prozor kada se klikne dugme srpski ili engleski jezik
 
     def start_new_game(event):
         if (event.keysym != p1_down and event.keysym != p2_up and event.keysym != p2_down):
@@ -56,6 +56,6 @@ def Map_Button(jezik,p1color,p2color,p1_up,p1_down,p2_up,p2_down):              
                     fg="red", 
                     bg="black")                # Informacija na dnu stranice ko je napravio igricu
 
-    naslov.pack(pady=150)                       # Dugme je ubaceno u prozor
+    naslov.pack(pady=150)                      # Dugme je ubaceno u prozor
 
     copyright.pack(side="bottom")              # Informacija na dnu je ubacena u prozor
