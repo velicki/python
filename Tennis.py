@@ -74,16 +74,14 @@ windows_configuration()
 
 #-----------------------------------------------
 
-s_f_b = buttonb("SRPSKI", PhotoImage(file="SerbianFlag.png"), clicked_serbian)
-serbian_flag = s_f_b.create_button()            # Napravljeno i dekorisano je dugme srpski jezikj
+s_f_b = buttonb("SRPSKI", PhotoImage(file="SerbianFlag.png"), clicked_serbian)   # Napravljeno i dekorisano je dugme srpski jezikj
 
-e_f_b = buttonb("ENGLISH", PhotoImage(file="EnglishFlag.png"), clicked_english)
-english_flag = e_f_b.create_button()            # Napravljeno i dekorisano je dugme engleski jezik
+e_f_b = buttonb("ENGLISH", PhotoImage(file="EnglishFlag.png"), clicked_english)  # Napravljeno i dekorisano je dugme engleski jezik
 
 #-----------------------------------------------
 
-serbian_flag.pack(pady=50)                      # Dugme za Srpski je ubaceno u prozor
-english_flag.pack(pady=50)                      # Dugme za Engleski je ubaceno u prozor
+s_f_b.create_button().pack(pady=50)             # Dugme za Srpski je ubaceno u prozor
+e_f_b.create_button().pack(pady=50)             # Dugme za Engleski je ubaceno u prozor
 copyright().pack(side="bottom")                 # Informacija na dnu je ubacena u prozor
 
 #-----------------------------------------------
