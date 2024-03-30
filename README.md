@@ -1,9 +1,12 @@
-Tennis Game README
+# Tennis Game README
 
 Welcome to my Tennis game written in Python! This game offers an exciting virtual tennis experience where players can enjoy thrilling matches with customizable features.
 
 
 ---------------------------------------------------------------------
+
+# WHAT I HAVE LEARNED!
+
 
 While working on developing this Tennis game in Python, I learned several valuable lessons:
 
@@ -20,28 +23,26 @@ While working on developing this Tennis game in Python, I learned several valuab
 Overall, developing this Tennis game in Python was a rewarding experience that allowed me to enhance my programming skills, gain insights into game development processes, and contribute to creating an enjoyable gaming experience for players
 
 ---------------------------------------------------------------------
-Features
+
+# Features
 
 
 Multi-language Support (English and Serbian)
 
 My Tennis game supports multiple languages, allowing users from different linguistic backgrounds to enjoy the game in their preferred language.
 
----------------------------------------------------------------------
 
 Customizable Controls
 
 Players have the flexibility to set up their preferred controls according to their comfort and playing style. This feature enhances the gaming experience by allowing users to tailor the controls to their liking.
 
----------------------------------------------------------------------
 
 Player Color Selection
 
 Players can choose the color of their characters, adding a personal touch to their gaming experience. With a variety of colors to choose from, players can customize their avatars to reflect their individual preferences.
 
----------------------------------------------------------------------
 
-How to Play
+# How to Play
 
 Installation: Clone the repository to your local machine and ensure you have Python installed.
 
